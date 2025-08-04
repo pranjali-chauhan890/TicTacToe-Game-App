@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Scoreboard at the Top -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/playerXScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player X: 0"
+            android:textSize="18sp"
+            android:layout_marginEnd="24dp" />
+
+        <TextView
+            android:id="@+id/playerOScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player O: 0"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Game Board using GridLayout -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_marginBottom="16dp">
+
+        <!-- Buttons -->
+        <Button android:id="@+id/button00" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" android:layout_margin="4dp"/>
+        <Button android:id="@+id/button01" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" android:layout_margin="4dp"/>
+        <Button android:id="@+id/button02" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" android:layout_margin="4dp"/>
+
+        <Button android:id="@+id/button10" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" android:layout_margin="4dp"/>
+        <Button android:id="@+id/button11" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" android:layout_margin="4dp"/>
+        <Button android:id="@+id/button12" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" android:layout_margin="4dp"/>
+
+        <Button android:id="@+id/button20" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" android:layout_margin="4dp"/>
+        <Button android:id="@+id/button21" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" android:layout_margin="4dp"/>
+        <Button android:id="@+id/button22" android:layout_width="80dp" android:layout_height="80dp" android:textSize="24sp" android:layout_margin="4dp"/>
+    </GridLayout>
+
+    <!-- Turn Status -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn: Player X"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Game" />
+</LinearLayout>
