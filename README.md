@@ -23,12 +23,6 @@ If you like this project, please ⭐ the repository and share it!
 
 ---
 
-## 📱 Screenshots
-
-> (Add your screenshots here – e.g., main menu, game screen, victory message, etc.)
-
----
-
 ## 🛠 Built With
 
 - *Android Studio*
