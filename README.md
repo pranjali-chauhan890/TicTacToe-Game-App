@@ -2,6 +2,8 @@
 
 A clean, fun, and lightweight Android implementation of the classic *Tic-Tac-Toe* (Noughts and Crosses) game. Play against a friend locally or challenge an AI opponent in this nostalgic strategy game with a modern UI.
 
+If you like this project, please ⭐ the repository and share it!
+
 ---
 
 ## 🕹 Features
